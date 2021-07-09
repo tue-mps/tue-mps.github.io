@@ -20,4 +20,22 @@ Click the &lt;em>Cite&lt;/em> button above to demo the feature to enable visitor
 Click the &lt;em>Cite&lt;/em> button above to demo the feature to enable visitors to import publication metadata into their reference management software.
 &lt;/div>
 &lt;/div>
-&lt;p>Supplementary notes can be added here, including &lt;a href="https://sourcethemes.com/academic/docs/writing-markdown-latex/" target="_blank" rel="noopener">code and math&lt;/a>.&lt;/p></description></item><item><title/><link>https://tue-mps.github.io/admin/config.yml</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tue-mps.github.io/admin/config.yml</guid><description/></item><item><title/><link>https://tue-mps.github.io/contact/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tue-mps.github.io/contact/</guid><description/></item><item><title/><link>https://tue-mps.github.io/people/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tue-mps.github.io/people/</guid><description/></item></channel></rss>
+&lt;p>Supplementary notes can be added here, including &lt;a href="https://sourcethemes.com/academic/docs/writing-markdown-latex/" target="_blank" rel="noopener">code and math&lt;/a>.&lt;/p></description></item><item><title/><link>https://tue-mps.github.io/admin/config.yml</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tue-mps.github.io/admin/config.yml</guid><description/></item><item><title/><link>https://tue-mps.github.io/contact/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tue-mps.github.io/contact/</guid><description/></item><item><title/><link>https://tue-mps.github.io/people/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tue-mps.github.io/people/</guid><description/></item><item><title>Projects</title><link>https://tue-mps.github.io/projects/projects/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tue-mps.github.io/projects/projects/</guid><description>&lt;hr>
+&lt;h1 id="documentation-httpswowchemycomdocspage-builder">Documentation: &lt;a href="https://wowchemy.com/docs/page-builder/">https://wowchemy.com/docs/page-builder/&lt;/a>&lt;/h1>
+&lt;p>widget: pages
+headless: true
+weight: 20&lt;/p>
+&lt;h2 id="columns-1">content:
+count: 5
+filters:
+author: &amp;quot;&amp;quot;
+category: &amp;ldquo;project&amp;rdquo;
+exclude_featured: false
+publication_type: &amp;quot;&amp;quot;
+tag: &amp;quot;&amp;quot;
+offset: 0
+order: desc
+page_type: post
+design:
+view: 3
+columns: &amp;ldquo;1&amp;rdquo;&lt;/h2></description></item></channel></rss>

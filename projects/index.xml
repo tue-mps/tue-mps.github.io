@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Projects | Mobile Perception Systems Lab</title><link>https://tue-mps.github.io/projects/</link><atom:link href="https://tue-mps.github.io/projects/index.xml" rel="self" type="application/rss+xml"/><description>Projects</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><image><url>https://tue-mps.github.io/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url><title>Projects</title><link>https://tue-mps.github.io/projects/</link></image><item><title>Projects</title><link>https://tue-mps.github.io/projects/projects/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tue-mps.github.io/projects/projects/</guid><description>&lt;hr>
+&lt;h1 id="documentation-httpswowchemycomdocspage-builder">Documentation: &lt;a href="https://wowchemy.com/docs/page-builder/">https://wowchemy.com/docs/page-builder/&lt;/a>&lt;/h1>
+&lt;p>widget: pages
+headless: true
+weight: 20&lt;/p>
+&lt;h2 id="columns-1">content:
+count: 5
+filters:
+author: &amp;quot;&amp;quot;
+category: &amp;ldquo;project&amp;rdquo;
+exclude_featured: false
+publication_type: &amp;quot;&amp;quot;
+tag: &amp;quot;&amp;quot;
+offset: 0
+order: desc
+page_type: post
+design:
+view: 3
+columns: &amp;ldquo;1&amp;rdquo;&lt;/h2></description></item></channel></rss>
