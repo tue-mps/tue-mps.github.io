@@ -6,7 +6,7 @@ title: MPS Lab
 superuser: true
 
 # Role/position
-role: Professor of Artificial Intelligence
+role: Project supervisor
 
 # Organizations/Affiliations
 organizations:
