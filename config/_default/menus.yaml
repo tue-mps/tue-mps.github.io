@@ -5,7 +5,7 @@
 
 main:
   - name: Projects
-    url: projects
+    url: "projects/projects"
     weight: 20
 #  - name: People
 #    url: people
