@@ -4,7 +4,7 @@ widget: pages
 headless: true
 weight: 20
 
-title: Latest projects
+title: Latest available student projects
 subtitle:
 
 content:
