@@ -1,3 +1,4 @@
+---
 title: Graduation project title
 date: 2021-07-09
 categories: ["Graduation Project"]
