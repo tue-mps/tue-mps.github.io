@@ -11,7 +11,7 @@ content:
   count: 10
   filters:
     author: ""
-    category: "project"
+    category: ["Internship", "Graduation Project"]
     exclude_featured: false
     publication_type: ""
     tag: ""

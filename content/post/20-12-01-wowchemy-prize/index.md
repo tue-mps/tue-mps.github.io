@@ -1,7 +1,7 @@
 ---
 title: Richard Hendricks Wins First Place in the Wowchemy Prize
 date: 2020-12-01
-categories: ["project"]
+categories: ["Graduation Project"]
 ---
 
 Congratulations to Richard Hendricks for winning first place in the Wowchemy Prize.
