@@ -2,6 +2,11 @@
 title: Accuracy and Efficiency Improvements for Fast Panoptic Segmentation
 date: 2021-07-09
 categories: ["Internship"]
+
+image:
+  caption: 'Image credit: [**Cityscapes dataset**](https://www.cityscapes-dataset.com/)'
+  focal_point: ""
+  preview_only: false
 ---
 
 **Summary:** During this project, you will improve an existing network for panoptic segmentation, to make it more accurate and efficient.
