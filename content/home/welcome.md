@@ -18,3 +18,5 @@ advanced:
 ---
 
 On this website, you can see the available student projects at the MPS Lab at TU/e.
+
+For more information about our lab, please check out our [official page](https://www.tue.nl/en/research/research-groups/signal-processing-systems/mobile-perception-systems-lab/). 
