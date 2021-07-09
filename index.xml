@@ -25,6 +25,8 @@ Click the &lt;em>Cite&lt;/em> button above to demo the feature to enable visitor
 &lt;p>widget: pages
 headless: true
 weight: 20&lt;/p>
+&lt;p>title: Latest projects
+subtitle:&lt;/p>
 &lt;h2 id="columns-1">content:
 count: 5
 filters:
