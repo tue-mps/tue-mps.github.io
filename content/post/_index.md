@@ -1,5 +1,5 @@
 ---
-title: Latest News
+title: Student projects at the MPS Lab
 
 # View.
 #   1 = List

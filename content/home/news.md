@@ -17,8 +17,8 @@ content:
     tag: ""
   offset: 0
   order: desc
-  page_type: projects
+  page_type: post
 design:
-  view: 2
+  view: 1
   columns: "1"
 ---
