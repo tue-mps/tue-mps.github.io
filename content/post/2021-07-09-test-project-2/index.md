@@ -1,7 +1,7 @@
 ---
 title: Test internship 1
 date: 2021-07-09
-categories: ["Internship"]
+categories: ["Graduation Project"]
 ---
 
 Test test 2
