@@ -1,22 +1,14 @@
 ---
-title: Projects
-summary: Student projects at the MPS lab
-type: "widget_page"
-
-
----
-
----
 # Documentation: https://wowchemy.com/docs/page-builder/
 widget: pages
 headless: true
-weight: 20
+weight: 10
 
-title: Latest projects
+title: Student projects at the MPS Lab
 subtitle:
 
 content:
-  count: 5
+  count: 10
   filters:
     author: ""
     category: "project"
@@ -27,6 +19,6 @@ content:
   order: desc
   page_type: post
 design:
-  view: 3
+  view: 2
   columns: "1"
 ---
