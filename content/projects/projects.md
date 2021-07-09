@@ -12,6 +12,9 @@ widget: pages
 headless: true
 weight: 20
 
+title: Latest projects
+subtitle:
+
 content:
   count: 5
   filters:
