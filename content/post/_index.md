@@ -1,5 +1,5 @@
 ---
-title: Student projects at the MPS Lab
+title: Student projects
 
 # View.
 #   1 = List
