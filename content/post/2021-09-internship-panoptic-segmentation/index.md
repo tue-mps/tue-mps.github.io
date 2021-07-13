@@ -4,7 +4,7 @@ date: 2021-07-09
 categories: ["Internship"]
 
 image:
-  caption: 'Image credit: [**Cityscapes dataset**](https://www.cityscapes-dataset.com/)'
+  caption: 'Panoptic segmentation. Image credit: [**Cityscapes dataset**](https://www.cityscapes-dataset.com/)'
   focal_point: ""
   preview_only: false
 ---
