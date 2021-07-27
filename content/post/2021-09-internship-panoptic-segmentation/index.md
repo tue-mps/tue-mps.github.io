@@ -9,6 +9,8 @@ image:
   preview_only: false
 ---
 
+**Update: this project is not available anymore. It remains visible to show the type of student projects available at our group.**
+
 **Summary:** During this project, you will improve an existing network for panoptic segmentation, to make it more accurate and efficient.
 
 <!--more-->
