@@ -2,7 +2,11 @@
 title: Graduation project title
 date: 2021-07-09
 categories: ["Graduation Project"]
-private: true
+
+_build:
+  render: always
+  list: never
+
 ---
 
 **Summary:** During this project, you will ...
