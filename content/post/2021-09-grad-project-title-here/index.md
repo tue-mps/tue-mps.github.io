@@ -2,6 +2,7 @@
 title: Graduation project title
 date: 2021-07-09
 categories: ["Graduation Project"]
+draft: true
 ---
 
 **Summary:** During this project, you will ...
