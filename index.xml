@@ -4,7 +4,38 @@
 &lt;li>&lt;strong>Upload&lt;/strong> an existing slide deck to &lt;code>static/&lt;/code> and link using &lt;code>url_slides&lt;/code> parameter in the front matter of the talk file&lt;/li>
 &lt;li>&lt;strong>Embed&lt;/strong> your slides (e.g. Google Slides) or presentation video on this page using &lt;a href="https://wowchemy.com/docs/writing-markdown-latex/" target="_blank" rel="noopener">shortcodes&lt;/a>.&lt;/li>
 &lt;/ul>
-&lt;p>Further event details, including page elements such as image galleries, can be added to the body of this page.&lt;/p></description></item><item><title>Accuracy and Efficiency Improvements for Fast Panoptic Segmentation</title><link>https://tue-mps.github.io/post/2021-09-internship-panoptic-segmentation/</link><pubDate>Fri, 09 Jul 2021 00:00:00 +0000</pubDate><guid>https://tue-mps.github.io/post/2021-09-internship-panoptic-segmentation/</guid><description>&lt;p>&lt;strong>Update: this project is not available anymore. It remains visible to show the type of student projects available at our group.&lt;/strong>&lt;/p>
+&lt;p>Further event details, including page elements such as image galleries, can be added to the body of this page.&lt;/p></description></item><item><title>Pedestrian Path Prediction via imitation learning with Inverse Resinforcement Learning</title><link>https://tue-mps.github.io/post/2021-09-internship-trajectory-prediction/</link><pubDate>Fri, 13 Aug 2021 00:00:00 +0000</pubDate><guid>https://tue-mps.github.io/post/2021-09-internship-trajectory-prediction/</guid><description>&lt;p>&lt;strong>Important note: the details of this projects are provisional, and may be subject to change.&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>Summary:&lt;/strong> During this project, you will apply a state-of-the-art imitation learning algorithm to the task of pedestrian path prediction.&lt;/p>
+&lt;p>&lt;strong>Type:&lt;/strong> Internship&lt;/p>
+&lt;p>&lt;strong>Starting date:&lt;/strong> September 2021&lt;/p>
+&lt;p>&lt;strong>Supervisor:&lt;/strong> Ariyan Bighashdel&lt;/p>
+&lt;p>&lt;strong>General description:&lt;/strong>&lt;/p>
+&lt;p>Pedestrian path prediction is an important problem in computer vision, with various applications such as autonomous vehicles and video surveillance. Despite significant progress over the past years, pedestrian path prediction has remained a complex problem, far from being solved.&lt;/p>
+&lt;p>The problem of pedestrian path prediction in the literature has been formulated in various ways, but conceptually all try to answer the following simple question:&lt;/p>
+&lt;p>&amp;ldquo;&lt;em>Observing available information for a specific period of time, what will be the future positions of a target pedestrian in the next period of time?&lt;/em>&amp;rdquo;&lt;/p>
+&lt;p>The proposed formulations may fundamentally differ in providing an answer to the above question. Path prediction approaches can be generally formulated as either a supervised learning (SL) problem or an imitation learning (IL) one. In the SL formulation, the idea is to train a (deep) model with a set of training input-output pairs. On the other hand, in the IL formulation, the goal is to train an agent to mimic the behavior of pedestrian from a set of (expert) pedestrian demonstrations.&lt;/p>
+&lt;p>To date, the SL formulation of the pedestrian path prediction task has received scant attention in the research literature and there is a surprisingly little amount of studies comparing two proposed formulations. Therefore, the goal is to compare both formulations in a well-controlled study.&lt;/p>
+&lt;p>&lt;strong>Task description:&lt;/strong>
+During this project, you will accomplish the following goals:&lt;/p>
+&lt;ul>
+&lt;li>Running an available pedestrian path prediction model with the encoder-decoder LSTM network.&lt;/li>
+&lt;li>Running an available deep reinforcement learning algorithm for a general robotics task.&lt;/li>
+&lt;li>Implementation of a pedestrian path prediction model using Generative Adversarial Imitation Learning [1].&lt;/li>
+&lt;li>Evaluation and comparison of the two prediction models in a well-controlled study.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Prerequisites:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Experience with implementation of recurrent neural networks.&lt;/li>
+&lt;li>General knowledge about reinforcement learning and/or high motivation to learn.&lt;/li>
+&lt;li>Familiarity with simulation environments, (e.g. gym) and/or high motivation to learn&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Interested?&lt;/strong> Send an email to &lt;a href="mailto:a.bighashdel@tue.nl">a.bighashdel@tue.nl&lt;/a>, containing:&lt;/p>
+&lt;ul>
+&lt;li>Brief motivation letter&lt;/li>
+&lt;li>List of relevant courses and grades&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>References&lt;/strong>&lt;/p>
+&lt;p>[1] J. Ho and S. Ermon, “Generative adversarial imitation learning,” in Advances in Neural Information Processing Systems, 2016, pp. 4565–4573.&lt;/p></description></item><item><title>Accuracy and Efficiency Improvements for Fast Panoptic Segmentation</title><link>https://tue-mps.github.io/post/2021-09-internship-panoptic-segmentation/</link><pubDate>Fri, 09 Jul 2021 00:00:00 +0000</pubDate><guid>https://tue-mps.github.io/post/2021-09-internship-panoptic-segmentation/</guid><description>&lt;p>&lt;strong>Update: this project is not available anymore. It remains visible to show the type of student projects available at our group.&lt;/strong>&lt;/p>
 &lt;p>&lt;strong>Summary:&lt;/strong> During this project, you will improve an existing network for panoptic segmentation, to make it more accurate and efficient.&lt;/p>
 &lt;p>&lt;strong>Type:&lt;/strong> Internship&lt;/p>
 &lt;p>&lt;strong>Starting date:&lt;/strong> September 2021&lt;/p>
