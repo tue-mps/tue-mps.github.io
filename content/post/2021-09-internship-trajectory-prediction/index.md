@@ -1,5 +1,5 @@
 ---
-title: Pedestrian Path Prediction via imitation learning with Inverse Resinforcement Learning
+title: Pedestrian Path Prediction via Imitation Learning with Inverse Reinforcement Learning
 date: 2021-08-13
 categories: ["Internship"]
 
