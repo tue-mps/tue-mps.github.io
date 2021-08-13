@@ -8,7 +8,7 @@ image:
   focal_point: ""
   preview_only: false
 ---
-**Important note: the details of this projects are provisional, and may be subject to change.**
+**Important note: this project is provisional, and the details may be subject to change.**
 
 **Summary:** During this project, you will apply a state-of-the-art imitation learning algorithm to the task of pedestrian path prediction.
 
