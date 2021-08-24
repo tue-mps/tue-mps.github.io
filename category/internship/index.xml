@@ -1,4 +1,66 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Internship | Mobile Perception Systems Lab</title><link>https://tue-mps.github.io/category/internship/</link><atom:link href="https://tue-mps.github.io/category/internship/index.xml" rel="self" type="application/rss+xml"/><description>Internship</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 13 Aug 2021 00:00:00 +0000</lastBuildDate><image><url>https://tue-mps.github.io/media/icon_hu9bffa56b6a2f6e08d28b87009a0bc873_1397_512x512_fill_lanczos_center_3.png</url><title>Internship</title><link>https://tue-mps.github.io/category/internship/</link></image><item><title>Pedestrian Path Prediction via Imitation Learning with Inverse Reinforcement Learning</title><link>https://tue-mps.github.io/post/2021-09-internship-trajectory-prediction/</link><pubDate>Fri, 13 Aug 2021 00:00:00 +0000</pubDate><guid>https://tue-mps.github.io/post/2021-09-internship-trajectory-prediction/</guid><description>&lt;p>&lt;strong>Important note: this project is provisional, and the details may be subject to change.&lt;/strong>&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Internship | Mobile Perception Systems Lab</title><link>https://tue-mps.github.io/category/internship/</link><atom:link href="https://tue-mps.github.io/category/internship/index.xml" rel="self" type="application/rss+xml"/><description>Internship</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 19 Aug 2021 00:00:00 +0000</lastBuildDate><image><url>https://tue-mps.github.io/media/icon_hu9bffa56b6a2f6e08d28b87009a0bc873_1397_512x512_fill_lanczos_center_3.png</url><title>Internship</title><link>https://tue-mps.github.io/category/internship/</link></image><item><title>Teach a driving agent what it cannot see</title><link>https://tue-mps.github.io/post/2021-09-internship-risk-aware-decision-making/</link><pubDate>Thu, 19 Aug 2021 00:00:00 +0000</pubDate><guid>https://tue-mps.github.io/post/2021-09-internship-risk-aware-decision-making/</guid><description>&lt;p>&lt;strong>Important note: this project is provisional, and the details may be subject to change.&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>Summary:&lt;/strong> During this project, you will implement, train and evaluate a Reinforcement Learning method for driving in a 3D simulation enviornment&lt;/p>
+&lt;p>&lt;strong>Type:&lt;/strong> Internship&lt;/p>
+&lt;p>&lt;strong>Starting date:&lt;/strong> September 2021&lt;/p>
+&lt;p>&lt;strong>Supervisor:&lt;/strong> Arash Roomi Zadeh&lt;/p>
+&lt;p>&lt;strong>General description:&lt;/strong>&lt;/p>
+&lt;p>Safe navigation in urban environments remains a challenging problem for autonomous vehicles. Reinforcement Learning (RL) algorithms have shown great success in many behavior generation applications when the agent has access to a reliable state signal such as video game playing tasks. This motivates researchers to also use RL for decision-making for automated driving. Despite these achievements, the state-of-the-art RL methods for automated driving still cannot achieve safety requirements for real-world autonomous driving. This is due to both non-practicality of training in the real world, the uncertain nature of the observations, and the stochastic nature of the driving environment.&lt;/p>
+&lt;p>Traditionally, RL algorithms choose actions that maximize mean return value. This is desired in domains in which failure has a low impact. However, in real-world driving tasks, events with low probability but a high impact (e.g., rare collision types) also play a critical role in policy generation. This motivates using risk evaluation for policy generation for decision-making. Risk-sensitive optimization of distributional DQN networks has been employed in fields in which risk-avoidance is critical and has got promising results.&lt;/p>
+&lt;p>The first goal of this internship is to implement a Distributional Reinforcement Learning algorithm and use it for driving policy risk evaluation. Secondly, the aim is to provide this algorithm with extra information about uncertainty such as detection accuracy and occlusions, to generate safe driving policies.&lt;/p>
+&lt;p>We use two environments for training and evaluation, a 2D gym environment and a realistic 3D simulation environment (CARLA).&lt;/p>
+&lt;p>&lt;strong>Task description:&lt;/strong>
+During this project, you will carry out the following tasks:&lt;/p>
+&lt;ul>
+&lt;li>Implement and evaluate a baseline Distributional Reinforcement Learning (DRL) agent in the CARLA environment. For this task, you will need to integrate a scene understanding method such as semantic segmentation with a DRL agent.&lt;/li>
+&lt;li>Train and evaluate a baseline agent in presence of observation uncertainties.&lt;/li>
+&lt;li>Train and evlauate an agent provided with the observation uncertainty information.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Prerequisites:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Good programming and neural networks implementation skills.&lt;/li>
+&lt;li>Theoretical knowledge about neural networks.&lt;/li>
+&lt;li>General knowledge about reinforcement learning and/or high motivation to learn.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Interested?&lt;/strong> Send an email to &lt;a href="mailto:a.roomi.zadeh@tue.nl">a.roomi.zadeh@tue.nl&lt;/a>, containing:&lt;/p>
+&lt;ul>
+&lt;li>Brief motivation letter&lt;/li>
+&lt;li>List of relevant courses and grades&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>References and further reading&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>[1] &lt;a href="https://www.youtube.com/watch?v=-L9VuPpzVdQ" target="_blank" rel="noopener">The CARLA Autonomous Driving Leaderboard&lt;/a>&lt;/li>
+&lt;li>[2] M.G. Bellemare, W. Dabney, R. Munos, &amp;ldquo;A Distributional Perspective on Reinforcement Learning&amp;rdquo;, International Conference on Machine Learning 2017.&lt;/li>
+&lt;/ul></description></item><item><title>Towards Modeling the Vehicles Interactions for the purpose of Path Prediction</title><link>https://tue-mps.github.io/post/2021-09-internship-vehicle-interaction/</link><pubDate>Thu, 19 Aug 2021 00:00:00 +0000</pubDate><guid>https://tue-mps.github.io/post/2021-09-internship-vehicle-interaction/</guid><description>&lt;p>&lt;strong>Important note: this project is provisional, and the details may be subject to change.&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>Summary:&lt;/strong> During this project, you will be able to model the interactions between vehicles to improve trajectory prediction of those vehicles.&lt;/p>
+&lt;p>&lt;strong>Type:&lt;/strong> Internship&lt;/p>
+&lt;p>&lt;strong>Starting date:&lt;/strong> September 2021&lt;/p>
+&lt;p>&lt;strong>Supervisor:&lt;/strong> Ariyan Bighashdel&lt;/p>
+&lt;p>&lt;strong>General description:&lt;/strong>&lt;/p>
+&lt;p>Developing Advanced Driving Assistance Systems (ADAS) can play a crucial role in reducing the number of injuries and deaths, related to motor vehicle accidents. Although this is encouraging, ADAS still have significant challenges when it comes to driving in more crowded
+areas. In these situations, forecasting the future movements of vehicles is a vital task in producing collision-free paths. However, trajectory prediction of the vehicles has remained a complex problem due to numerous factors, one of which is the interactions between the vehicles.&lt;/p>
+&lt;p>In the last decades, the subject of interaction modeling has been extensively addressed in the literature for pedestrian path prediction purposes. For many years, researchers heavily relied on traditional approaches with hand-crafted models to interpret the interactions between humans in crowded areas. After the dawn of deep learning, researchers had the opportunity to rely on more learning-based methods to infer the interactions. The developed learning-based methods have shown promising results for pedestrian path prediction in various scenarios with dominating human-human interactions.&lt;/p>
+&lt;p>To date, few studies have examined the association between human-human and vehicle-vehicle interaction modeling methods. Therefore, the goal of this project is to develop a vehicle trajectory prediction framework with various interaction modeling methods which are inspired from human-human interaction modeling, and compare them in a well-controlled study.&lt;/p>
+&lt;p>&lt;strong>Task description:&lt;/strong>
+During this project, you will accomplish the following goals:&lt;/p>
+&lt;ul>
+&lt;li>Implementing a vehicle path prediction model with an encoder-decoder LSTM network.&lt;/li>
+&lt;li>Implementing three human-human interaction modeling methods: 1) discrete social pooling [1] 2) continuous social pooling [2] and 3) graph attention [3], in the vehicle path prediction model.&lt;/li>
+&lt;li>Evaluation and comparison of the three interaction modeling methods on the rounD vehicle trajectory dataset [4].&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Prerequisites:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Experience with the implementation of recurrent neural networks.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Interested?&lt;/strong> Send an email to &lt;a href="mailto:a.bighashdel@tue.nl">a.bighashdel@tue.nl&lt;/a>, containing:&lt;/p>
+&lt;ul>
+&lt;li>Brief motivation letter&lt;/li>
+&lt;li>List of relevant courses and grades&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>References&lt;/strong>&lt;/p>
+&lt;p>[1] A. Alahi, K. Goel, V. Ramanathan, A. Robicquet, L. Fei-Fei, and S. Savarese, &amp;ldquo;Social lstm: Human trajectory prediction in crowded spaces,&amp;rdquo; in Computer Pision and Pattern Recognition (CVPR), 2016, pp. 961-971.&lt;/p>
+&lt;p>[2] A. Gupta, J. Johnson, L. Fei-Fei, S. Savarese, and A. Alahi, &amp;ldquo;Social gan: Socially acceptable trajectories with generative adversarial networks,&amp;rdquo; in Computer Pision and Pattern Recognition (CVPR), 2018, pp. 2255-2264.&lt;/p>
+&lt;p>[3] Y. Huang, H. Bi, Z. Li, T. Mao, and Z. Wang, &amp;ldquo;Stgat: Modeling spatial-temporal interactions for human trajectory prediction,&amp;rdquo; in International Conference on Computer Vision (ICCV), 2019, pp. 6272-6281.&lt;/p>
+&lt;p>[4] R. Krajewski, T. Moers, J. Bock, L. Vater, and L. Eckstein, &amp;ldquo;The rounD Dataset: A Drone Dataset of Road User Trajectories at Roundabouts in Germany,&amp;rdquo; in International Conference on Intelligent Transportation Systems (ITSC), 2020, pp. 1-6.&lt;/p></description></item><item><title>Pedestrian Path Prediction via Imitation Learning with Inverse Reinforcement Learning</title><link>https://tue-mps.github.io/post/2021-09-internship-trajectory-prediction/</link><pubDate>Fri, 13 Aug 2021 00:00:00 +0000</pubDate><guid>https://tue-mps.github.io/post/2021-09-internship-trajectory-prediction/</guid><description>&lt;p>&lt;strong>Important note: this project is provisional, and the details may be subject to change.&lt;/strong>&lt;/p>
 &lt;p>&lt;strong>Summary:&lt;/strong> During this project, you will apply a state-of-the-art imitation learning algorithm to the task of pedestrian path prediction.&lt;/p>
 &lt;p>&lt;strong>Type:&lt;/strong> Internship&lt;/p>
 &lt;p>&lt;strong>Starting date:&lt;/strong> September 2021&lt;/p>

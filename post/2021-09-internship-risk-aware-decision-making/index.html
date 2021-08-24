@@ -5,28 +5,31 @@
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=generator content="Wowchemy 5.2.0 for Hugo">
 <meta name=author content="MPS Lab">
-<meta name=description content="Mobile Perception Systems Lab">
-<link rel=alternate hreflang=en-us href=https://tue-mps.github.io/post/>
+<meta name=description content="Important note: this project is provisional, and the details may be subject to change.
+Summary: During this project, you will implement, train and evaluate a Reinforcement Learning method for driving in a 3D simulation enviornment">
+<link rel=alternate hreflang=en-us href=https://tue-mps.github.io/post/2021-09-internship-risk-aware-decision-making/>
 <meta name=theme-color content="#1565c0">
 <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin=anonymous>
 <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin=anonymous>
 <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin=anonymous media=print onload="this.media='all'">
 <link rel=stylesheet href=/css/wowchemy.9323e92a86867f49787cddc13e4e8c6c.css>
-<link rel=alternate href=/post/index.xml type=application/rss+xml title="Mobile Perception Systems Lab">
 <link rel=manifest href=/index.webmanifest>
 <link rel=icon type=image/png href=/media/icon_hu9bffa56b6a2f6e08d28b87009a0bc873_1397_32x32_fill_lanczos_center_3.png>
 <link rel=apple-touch-icon type=image/png href=/media/icon_hu9bffa56b6a2f6e08d28b87009a0bc873_1397_180x180_fill_lanczos_center_3.png>
-<link rel=canonical href=https://tue-mps.github.io/post/>
-<meta property="twitter:card" content="summary">
+<link rel=canonical href=https://tue-mps.github.io/post/2021-09-internship-risk-aware-decision-making/>
+<meta property="twitter:card" content="summary_large_image">
 <meta property="og:site_name" content="Mobile Perception Systems Lab">
-<meta property="og:url" content="https://tue-mps.github.io/post/">
-<meta property="og:title" content="Student projects | Mobile Perception Systems Lab">
-<meta property="og:description" content="Mobile Perception Systems Lab"><meta property="og:image" content="https://tue-mps.github.io/media/icon_hu9bffa56b6a2f6e08d28b87009a0bc873_1397_512x512_fill_lanczos_center_3.png">
-<meta property="twitter:image" content="https://tue-mps.github.io/media/icon_hu9bffa56b6a2f6e08d28b87009a0bc873_1397_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
-<meta property="og:updated_time" content="2021-08-19T00:00:00+00:00">
-<title>Student projects | Mobile Perception Systems Lab</title>
+<meta property="og:url" content="https://tue-mps.github.io/post/2021-09-internship-risk-aware-decision-making/">
+<meta property="og:title" content="Teach a driving agent what it cannot see | Mobile Perception Systems Lab">
+<meta property="og:description" content="Important note: this project is provisional, and the details may be subject to change.
+Summary: During this project, you will implement, train and evaluate a Reinforcement Learning method for driving in a 3D simulation enviornment"><meta property="og:image" content="https://tue-mps.github.io/post/2021-09-internship-risk-aware-decision-making/featured.png">
+<meta property="twitter:image" content="https://tue-mps.github.io/post/2021-09-internship-risk-aware-decision-making/featured.png"><meta property="og:locale" content="en-us">
+<meta property="article:published_time" content="2021-08-19T00:00:00+00:00">
+<meta property="article:modified_time" content="2021-08-19T00:00:00+00:00">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://tue-mps.github.io/post/2021-09-internship-risk-aware-decision-making/"},"headline":"Teach a driving agent what it cannot see","image":["https://tue-mps.github.io/post/2021-09-internship-risk-aware-decision-making/featured.png"],"datePublished":"2021-08-19T00:00:00Z","dateModified":"2021-08-19T00:00:00Z","author":{"@type":"Person","name":"MPS Lab"},"publisher":{"@type":"Organization","name":"Mobile Perception Systems Lab","logo":{"@type":"ImageObject","url":"https://tue-mps.github.io/media/icon_hu9bffa56b6a2f6e08d28b87009a0bc873_1397_192x192_fill_lanczos_center_3.png"}},"description":"\u003cp\u003e\u003cstrong\u003eImportant note: this project is provisional, and the details may be subject to change.\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eSummary:\u003c/strong\u003e During this project, you will implement, train and evaluate a Reinforcement Learning method for driving in a 3D simulation enviornment\u003c/p\u003e"}</script>
+<title>Teach a driving agent what it cannot see | Mobile Perception Systems Lab</title>
 </head>
-<body id=top data-spy=scroll data-offset=70 data-target=#TableOfContents class=page-wrapper data-wc-page-id=6370009740e1eb2ee0b7974f10ecc91f>
+<body id=top data-spy=scroll data-offset=70 data-target=#TableOfContents class=page-wrapper data-wc-page-id=a50c42bd62c89d3b098f3e5f0fc76804>
 <script src=/js/wowchemy-init.min.b8153d4570dcbb34350a2a846dba8c03.js></script>
 <aside class=search-modal id=search>
 <div class=container>
@@ -96,123 +99,71 @@
 </nav>
 </div>
 <div class=page-body>
-<div class="universal-wrapper pt-3">
-<h1>Student projects</h1>
+<article class=article>
+<div class="article-container pt-3">
+<h1>Teach a driving agent what it cannot see</h1>
+<div class=article-metadata>
+<span class=article-date>
+Aug 19, 2021
+</span>
+<span class=middot-divider></span>
+<span class=article-categories>
+<i class="fas fa-folder mr-1"></i><a href=/category/internship/>Internship</a></span>
 </div>
-<div class=universal-wrapper>
-<div class="media stream-item">
-<div class=media-body>
-<div class="section-subheading article-title mb-0 mt-0">
-<a href=/post/2021-09-internship-risk-aware-decision-making/>Teach a driving agent what it cannot see</a>
 </div>
-<a href=/post/2021-09-internship-risk-aware-decision-making/ class=summary-link>
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style=max-width:538px;max-height:539px>
+<div style=position:relative>
+<img src=/post/2021-09-internship-risk-aware-decision-making/featured.png alt class=featured-image>
+<span class=article-header-caption>Risk-aware decision-making</span>
+</div>
+</div>
+<div class=article-container>
 <div class=article-style>
 <p><strong>Important note: this project is provisional, and the details may be subject to change.</strong></p>
 <p><strong>Summary:</strong> During this project, you will implement, train and evaluate a Reinforcement Learning method for driving in a 3D simulation enviornment</p>
+<p><strong>Type:</strong> Internship</p>
+<p><strong>Starting date:</strong> September 2021</p>
+<p><strong>Supervisor:</strong> Arash Roomi Zadeh</p>
+<p><strong>General description:</strong></p>
+<p>Safe navigation in urban environments remains a challenging problem for autonomous vehicles. Reinforcement Learning (RL) algorithms have shown great success in many behavior generation applications when the agent has access to a reliable state signal such as video game playing tasks. This motivates researchers to also use RL for decision-making for automated driving. Despite these achievements, the state-of-the-art RL methods for automated driving still cannot achieve safety requirements for real-world autonomous driving. This is due to both non-practicality of training in the real world, the uncertain nature of the observations, and the stochastic nature of the driving environment.</p>
+<p>Traditionally, RL algorithms choose actions that maximize mean return value. This is desired in domains in which failure has a low impact. However, in real-world driving tasks, events with low probability but a high impact (e.g., rare collision types) also play a critical role in policy generation. This motivates using risk evaluation for policy generation for decision-making. Risk-sensitive optimization of distributional DQN networks has been employed in fields in which risk-avoidance is critical and has got promising results.</p>
+<p>The first goal of this internship is to implement a Distributional Reinforcement Learning algorithm and use it for driving policy risk evaluation. Secondly, the aim is to provide this algorithm with extra information about uncertainty such as detection accuracy and occlusions, to generate safe driving policies.</p>
+<p>We use two environments for training and evaluation, a 2D gym environment and a realistic 3D simulation environment (CARLA).</p>
+<p><strong>Task description:</strong>
+During this project, you will carry out the following tasks:</p>
+<ul>
+<li>Implement and evaluate a baseline Distributional Reinforcement Learning (DRL) agent in the CARLA environment. For this task, you will need to integrate a scene understanding method such as semantic segmentation with a DRL agent.</li>
+<li>Train and evaluate a baseline agent in presence of observation uncertainties.</li>
+<li>Train and evlauate an agent provided with the observation uncertainty information.</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Good programming and neural networks implementation skills.</li>
+<li>Theoretical knowledge about neural networks.</li>
+<li>General knowledge about reinforcement learning and/or high motivation to learn.</li>
+</ul>
+<p><strong>Interested?</strong> Send an email to <a href=mailto:a.roomi.zadeh@tue.nl>a.roomi.zadeh@tue.nl</a>, containing:</p>
+<ul>
+<li>Brief motivation letter</li>
+<li>List of relevant courses and grades</li>
+</ul>
+<p><strong>References and further reading</strong></p>
+<ul>
+<li>[1] <a href="https://www.youtube.com/watch?v=-L9VuPpzVdQ" target=_blank rel=noopener>The CARLA Autonomous Driving Leaderboard</a></li>
+<li>[2] M.G. Bellemare, W. Dabney, R. Munos, &ldquo;A Distributional Perspective on Reinforcement Learning&rdquo;, International Conference on Machine Learning 2017.</li>
+</ul>
 </div>
-</a>
-<div class="stream-meta article-metadata">
-<div class=article-metadata>
-<span class=article-date>
-Aug 19, 2021
-</span>
-<span class=middot-divider></span>
-<span class=article-categories>
-<i class="fas fa-folder mr-1"></i><a href=/category/internship/>Internship</a></span>
-</div>
-</div>
-</div>
-<div class=ml-3>
-<a href=/post/2021-09-internship-risk-aware-decision-making/>
-<img src=/post/2021-09-internship-risk-aware-decision-making/featured_hu1727bb8f9924ef56ea3f1e35b3385062_446018_150x0_resize_lanczos_3.png alt="Teach a driving agent what it cannot see" loading=lazy>
-</a>
-</div>
-</div>
-<div class="media stream-item">
+<div class="media author-card content-widget-hr">
+<a href=/author/mps-lab/><img class="avatar mr-3 avatar-circle" src=/author/mps-lab/avatar_hu52a603635ecebd45650b162dadabb4e5_12861_270x270_fill_q75_lanczos_center.jpg alt="MPS Lab"></a>
 <div class=media-body>
-<div class="section-subheading article-title mb-0 mt-0">
-<a href=/post/2021-09-internship-vehicle-interaction/>Towards Modeling the Vehicles Interactions for the purpose of Path Prediction</a>
-</div>
-<a href=/post/2021-09-internship-vehicle-interaction/ class=summary-link>
-<div class=article-style>
-<p><strong>Important note: this project is provisional, and the details may be subject to change.</strong></p>
-<p><strong>Summary:</strong> During this project, you will be able to model the interactions between vehicles to improve trajectory prediction of those vehicles.</p>
-</div>
-</a>
-<div class="stream-meta article-metadata">
-<div class=article-metadata>
-<span class=article-date>
-Aug 19, 2021
-</span>
-<span class=middot-divider></span>
-<span class=article-categories>
-<i class="fas fa-folder mr-1"></i><a href=/category/internship/>Internship</a></span>
+<h5 class=card-title><a href=/author/mps-lab/>MPS Lab</a></h5>
+<h6 class=card-subtitle>Project supervisor</h6>
+<ul class=network-icon aria-hidden=true>
+</ul>
 </div>
 </div>
 </div>
-<div class=ml-3>
-<a href=/post/2021-09-internship-vehicle-interaction/>
-<img src=/post/2021-09-internship-vehicle-interaction/featured_hua1855738f63d7b137d8b4a26e9a8e659_167471_150x0_resize_q75_lanczos.jpg alt="Towards Modeling the Vehicles Interactions for the purpose of Path Prediction" loading=lazy>
-</a>
-</div>
-</div>
-<div class="media stream-item">
-<div class=media-body>
-<div class="section-subheading article-title mb-0 mt-0">
-<a href=/post/2021-09-internship-trajectory-prediction/>Pedestrian Path Prediction via Imitation Learning with Inverse Reinforcement Learning</a>
-</div>
-<a href=/post/2021-09-internship-trajectory-prediction/ class=summary-link>
-<div class=article-style>
-<p><strong>Important note: this project is provisional, and the details may be subject to change.</strong></p>
-<p><strong>Summary:</strong> During this project, you will apply a state-of-the-art imitation learning algorithm to the task of pedestrian path prediction.</p>
-</div>
-</a>
-<div class="stream-meta article-metadata">
-<div class=article-metadata>
-<span class=article-date>
-Aug 13, 2021
-</span>
-<span class=middot-divider></span>
-<span class=article-categories>
-<i class="fas fa-folder mr-1"></i><a href=/category/internship/>Internship</a></span>
-</div>
-</div>
-</div>
-<div class=ml-3>
-<a href=/post/2021-09-internship-trajectory-prediction/>
-<img src=/post/2021-09-internship-trajectory-prediction/featured_hue2014cb013d4290459731e4d1369fa36_97976_150x0_resize_q75_lanczos.jpg alt="Pedestrian Path Prediction via Imitation Learning with Inverse Reinforcement Learning" loading=lazy>
-</a>
-</div>
-</div>
-<div class="media stream-item">
-<div class=media-body>
-<div class="section-subheading article-title mb-0 mt-0">
-<a href=/post/2021-09-internship-panoptic-segmentation/>Accuracy and Efficiency Improvements for Fast Panoptic Segmentation</a>
-</div>
-<a href=/post/2021-09-internship-panoptic-segmentation/ class=summary-link>
-<div class=article-style>
-<p><strong>Update: this project is not available anymore. It remains visible to show the type of student projects available at our group.</strong></p>
-<p><strong>Summary:</strong> During this project, you will improve an existing network for panoptic segmentation, to make it more accurate and efficient.</p>
-</div>
-</a>
-<div class="stream-meta article-metadata">
-<div class=article-metadata>
-<span class=article-date>
-Jul 9, 2021
-</span>
-<span class=middot-divider></span>
-<span class=article-categories>
-<i class="fas fa-folder mr-1"></i><a href=/category/internship/>Internship</a></span>
-</div>
-</div>
-</div>
-<div class=ml-3>
-<a href=/post/2021-09-internship-panoptic-segmentation/>
-<img src=/post/2021-09-internship-panoptic-segmentation/featured_hu334ed2e02680b74e3fd4bccb4d154071_128189_150x0_resize_q75_lanczos.jpg alt="Accuracy and Efficiency Improvements for Fast Panoptic Segmentation" loading=lazy>
-</a>
-</div>
-</div>
-</div>
+</article>
 </div>
 <div class=page-footer>
 <div class=container>

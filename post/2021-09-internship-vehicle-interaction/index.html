@@ -1,0 +1,220 @@
+<!doctype html><html lang=en-us>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=generator content="Wowchemy 5.2.0 for Hugo">
+<meta name=author content="MPS Lab">
+<meta name=description content="Important note: this project is provisional, and the details may be subject to change.
+Summary: During this project, you will be able to model the interactions between vehicles to improve trajectory prediction of those vehicles.">
+<link rel=alternate hreflang=en-us href=https://tue-mps.github.io/post/2021-09-internship-vehicle-interaction/>
+<meta name=theme-color content="#1565c0">
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin=anonymous>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin=anonymous>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin=anonymous media=print onload="this.media='all'">
+<link rel=stylesheet href=/css/wowchemy.9323e92a86867f49787cddc13e4e8c6c.css>
+<link rel=manifest href=/index.webmanifest>
+<link rel=icon type=image/png href=/media/icon_hu9bffa56b6a2f6e08d28b87009a0bc873_1397_32x32_fill_lanczos_center_3.png>
+<link rel=apple-touch-icon type=image/png href=/media/icon_hu9bffa56b6a2f6e08d28b87009a0bc873_1397_180x180_fill_lanczos_center_3.png>
+<link rel=canonical href=https://tue-mps.github.io/post/2021-09-internship-vehicle-interaction/>
+<meta property="twitter:card" content="summary_large_image">
+<meta property="og:site_name" content="Mobile Perception Systems Lab">
+<meta property="og:url" content="https://tue-mps.github.io/post/2021-09-internship-vehicle-interaction/">
+<meta property="og:title" content="Towards Modeling the Vehicles Interactions for the purpose of Path Prediction | Mobile Perception Systems Lab">
+<meta property="og:description" content="Important note: this project is provisional, and the details may be subject to change.
+Summary: During this project, you will be able to model the interactions between vehicles to improve trajectory prediction of those vehicles."><meta property="og:image" content="https://tue-mps.github.io/post/2021-09-internship-vehicle-interaction/featured.jpg">
+<meta property="twitter:image" content="https://tue-mps.github.io/post/2021-09-internship-vehicle-interaction/featured.jpg"><meta property="og:locale" content="en-us">
+<meta property="article:published_time" content="2021-08-19T00:00:00+00:00">
+<meta property="article:modified_time" content="2021-08-19T00:00:00+00:00">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://tue-mps.github.io/post/2021-09-internship-vehicle-interaction/"},"headline":"Towards Modeling the Vehicles Interactions for the purpose of Path Prediction","image":["https://tue-mps.github.io/post/2021-09-internship-vehicle-interaction/featured.jpg"],"datePublished":"2021-08-19T00:00:00Z","dateModified":"2021-08-19T00:00:00Z","author":{"@type":"Person","name":"MPS Lab"},"publisher":{"@type":"Organization","name":"Mobile Perception Systems Lab","logo":{"@type":"ImageObject","url":"https://tue-mps.github.io/media/icon_hu9bffa56b6a2f6e08d28b87009a0bc873_1397_192x192_fill_lanczos_center_3.png"}},"description":"\u003cp\u003e\u003cstrong\u003eImportant note: this project is provisional, and the details may be subject to change.\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eSummary:\u003c/strong\u003e During this project, you will be able to model the interactions between vehicles to improve trajectory prediction of those vehicles.\u003c/p\u003e"}</script>
+<title>Towards Modeling the Vehicles Interactions for the purpose of Path Prediction | Mobile Perception Systems Lab</title>
+</head>
+<body id=top data-spy=scroll data-offset=70 data-target=#TableOfContents class=page-wrapper data-wc-page-id=6be80eeca3528beaeaa6d54816c9a7e4>
+<script src=/js/wowchemy-init.min.b8153d4570dcbb34350a2a846dba8c03.js></script>
+<aside class=search-modal id=search>
+<div class=container>
+<section class=search-header>
+<div class="row no-gutters justify-content-between mb-3">
+<div class=col-6>
+<h1>Search</h1>
+</div>
+<div class="col-6 col-search-close">
+<a class=js-search href=# aria-label=Close><i class="fas fa-times-circle text-muted" aria-hidden=true></i></a>
+</div>
+</div>
+<div id=search-box>
+<input name=q id=search-query placeholder=Search... autocapitalize=off autocomplete=off autocorrect=off spellcheck=false type=search class=form-control aria-label=Search...>
+</div>
+</section>
+<section class=section-search-results>
+<div id=search-hits>
+</div>
+</section>
+</div>
+</aside>
+<div class=page-header>
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id=navbar-main>
+<div class=container-xl>
+<div class="d-none d-lg-inline-flex">
+<a class=navbar-brand href=/>Mobile Perception Systems Lab</a>
+</div>
+<button type=button class=navbar-toggler data-toggle=collapse data-target=#navbar-content aria-controls=navbar-content aria-expanded=false aria-label="Toggle navigation">
+<span><i class="fas fa-bars"></i></span>
+</button>
+<div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+<a class=navbar-brand href=/>Mobile Perception Systems Lab</a>
+</div>
+<div class="navbar-collapse main-menu-item collapse justify-content-end" id=navbar-content>
+<ul class="navbar-nav d-md-inline-flex">
+<li class=nav-item>
+<a class=nav-link href=/post><span>Projects</span></a>
+</li>
+<li class=nav-item>
+<a class=nav-link href=/contact><span>Contact</span></a>
+</li>
+</ul>
+</div>
+<ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+<li class=nav-item>
+<a class="nav-link js-search" href=# aria-label=Search><i class="fas fa-search" aria-hidden=true></i></a>
+</li>
+<li class="nav-item dropdown theme-dropdown">
+<a href=# class=nav-link data-toggle=dropdown aria-haspopup=true aria-label="Display preferences">
+<i class="fas fa-moon" aria-hidden=true></i>
+</a>
+<div class=dropdown-menu>
+<a href=# class="dropdown-item js-set-theme-light">
+<span>Light</span>
+</a>
+<a href=# class="dropdown-item js-set-theme-dark">
+<span>Dark</span>
+</a>
+<a href=# class="dropdown-item js-set-theme-auto">
+<span>Automatic</span>
+</a>
+</div>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+<div class=page-body>
+<article class=article>
+<div class="article-container pt-3">
+<h1>Towards Modeling the Vehicles Interactions for the purpose of Path Prediction</h1>
+<div class=article-metadata>
+<span class=article-date>
+Aug 19, 2021
+</span>
+<span class=middot-divider></span>
+<span class=article-categories>
+<i class="fas fa-folder mr-1"></i><a href=/category/internship/>Internship</a></span>
+</div>
+</div>
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style=max-width:720px;max-height:298px>
+<div style=position:relative>
+<img src=/post/2021-09-internship-vehicle-interaction/featured_hua1855738f63d7b137d8b4a26e9a8e659_167471_720x0_resize_q75_lanczos.jpg alt class=featured-image>
+<span class=article-header-caption>Vehicles trajectories. Image credit: <a href=https://round-dataset.com/><strong>The rounD Dataset</strong></a></span>
+</div>
+</div>
+<div class=article-container>
+<div class=article-style>
+<p><strong>Important note: this project is provisional, and the details may be subject to change.</strong></p>
+<p><strong>Summary:</strong> During this project, you will be able to model the interactions between vehicles to improve trajectory prediction of those vehicles.</p>
+<p><strong>Type:</strong> Internship</p>
+<p><strong>Starting date:</strong> September 2021</p>
+<p><strong>Supervisor:</strong> Ariyan Bighashdel</p>
+<p><strong>General description:</strong></p>
+<p>Developing Advanced Driving Assistance Systems (ADAS) can play a crucial role in reducing the number of injuries and deaths, related to motor vehicle accidents. Although this is encouraging, ADAS still have significant challenges when it comes to driving in more crowded
+areas. In these situations, forecasting the future movements of vehicles is a vital task in producing collision-free paths. However, trajectory prediction of the vehicles has remained a complex problem due to numerous factors, one of which is the interactions between the vehicles.</p>
+<p>In the last decades, the subject of interaction modeling has been extensively addressed in the literature for pedestrian path prediction purposes. For many years, researchers heavily relied on traditional approaches with hand-crafted models to interpret the interactions between humans in crowded areas. After the dawn of deep learning, researchers had the opportunity to rely on more learning-based methods to infer the interactions. The developed learning-based methods have shown promising results for pedestrian path prediction in various scenarios with dominating human-human interactions.</p>
+<p>To date, few studies have examined the association between human-human and vehicle-vehicle interaction modeling methods. Therefore, the goal of this project is to develop a vehicle trajectory prediction framework with various interaction modeling methods which are inspired from human-human interaction modeling, and compare them in a well-controlled study.</p>
+<p><strong>Task description:</strong>
+During this project, you will accomplish the following goals:</p>
+<ul>
+<li>Implementing a vehicle path prediction model with an encoder-decoder LSTM network.</li>
+<li>Implementing three human-human interaction modeling methods: 1) discrete social pooling [1] 2) continuous social pooling [2] and 3) graph attention [3], in the vehicle path prediction model.</li>
+<li>Evaluation and comparison of the three interaction modeling methods on the rounD vehicle trajectory dataset [4].</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Experience with the implementation of recurrent neural networks.</li>
+</ul>
+<p><strong>Interested?</strong> Send an email to <a href=mailto:a.bighashdel@tue.nl>a.bighashdel@tue.nl</a>, containing:</p>
+<ul>
+<li>Brief motivation letter</li>
+<li>List of relevant courses and grades</li>
+</ul>
+<p><strong>References</strong></p>
+<p>[1] A. Alahi, K. Goel, V. Ramanathan, A. Robicquet, L. Fei-Fei, and S. Savarese, &ldquo;Social lstm: Human trajectory prediction in crowded spaces,&rdquo; in Computer Pision and Pattern Recognition (CVPR), 2016, pp. 961-971.</p>
+<p>[2] A. Gupta, J. Johnson, L. Fei-Fei, S. Savarese, and A. Alahi, &ldquo;Social gan: Socially acceptable trajectories with generative adversarial networks,&rdquo; in Computer Pision and Pattern Recognition (CVPR), 2018, pp. 2255-2264.</p>
+<p>[3] Y. Huang, H. Bi, Z. Li, T. Mao, and Z. Wang, &ldquo;Stgat: Modeling spatial-temporal interactions for human trajectory prediction,&rdquo; in International Conference on Computer Vision (ICCV), 2019, pp. 6272-6281.</p>
+<p>[4] R. Krajewski, T. Moers, J. Bock, L. Vater, and L. Eckstein, &ldquo;The rounD Dataset: A Drone Dataset of Road User Trajectories at Roundabouts in Germany,&rdquo; in International Conference on Intelligent Transportation Systems (ITSC), 2020, pp. 1-6.</p>
+</div>
+<div class="media author-card content-widget-hr">
+<a href=/author/mps-lab/><img class="avatar mr-3 avatar-circle" src=/author/mps-lab/avatar_hu52a603635ecebd45650b162dadabb4e5_12861_270x270_fill_q75_lanczos_center.jpg alt="MPS Lab"></a>
+<div class=media-body>
+<h5 class=card-title><a href=/author/mps-lab/>MPS Lab</a></h5>
+<h6 class=card-subtitle>Project supervisor</h6>
+<ul class=network-icon aria-hidden=true>
+</ul>
+</div>
+</div>
+</div>
+</article>
+</div>
+<div class=page-footer>
+<div class=container>
+<footer class=site-footer>
+<p class=powered-by>
+Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target=_blank rel=noopener>Wowchemy</a> — the free, <a href=https://github.com/wowchemy/wowchemy-hugo-modules target=_blank rel=noopener>open source</a> website builder that empowers creators.
+</p>
+</footer>
+</div>
+</div>
+<div id=modal class="modal fade" role=dialog>
+<div class=modal-dialog>
+<div class=modal-content>
+<div class=modal-header>
+<h5 class=modal-title>Cite</h5>
+<button type=button class=close data-dismiss=modal aria-label=Close>
+<span aria-hidden=true>&#215;</span>
+</button>
+</div>
+<div class=modal-body>
+<pre><code class="tex hljs"></code></pre>
+</div>
+<div class=modal-footer>
+<a class="btn btn-outline-primary my-1 js-copy-cite" href=# target=_blank>
+<i class="fas fa-copy"></i> Copy
+</a>
+<a class="btn btn-outline-primary my-1 js-download-cite" href=# target=_blank>
+<i class="fas fa-download"></i> Download
+</a>
+<div id=modal-error></div>
+</div>
+</div>
+</div>
+</div>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin=anonymous></script>
+<script id=search-hit-fuse-template type=text/x-template>
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin=anonymous></script>
+<script src=/js/bootstrap.bundle.min.6aed84840afc03ab4d5750157f69c120.js></script>
+<script src=/en/js/wowchemy.min.fb8eb32a4d207f5f18023712a904b210.js></script>
+</body>
+</html>
