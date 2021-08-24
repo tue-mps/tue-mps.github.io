@@ -1,5 +1,5 @@
 ---
-title: Towards Modeling Vehicles Interactions for the purpose of Path Prediction
+title: Towards Modeling Vehicle Interactions for the purpose of Path Prediction
 date: 2021-08-19
 categories: ["Internship"]
 
