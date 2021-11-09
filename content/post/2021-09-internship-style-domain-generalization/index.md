@@ -1,10 +1,12 @@
 ---
-title: To Style or Not to Style? A Comparison Between Data Augmentation and Style Supression for Domain Generalization
+title: To Style or Not to Style? A Comparison Between Data Augmentation and
+  Style Supression for Domain Generalization
 date: 2021-08-25
-categories: ["Internship"]
-
+featured: false
+categories:
+  - Internship
 image:
-  caption: 'Current domain generalization approaches. Image credit: [1, 2]'
+  caption: "Current domain generalization approaches. Image credit: [1, 2]"
   focal_point: ""
   preview_only: false
 ---
