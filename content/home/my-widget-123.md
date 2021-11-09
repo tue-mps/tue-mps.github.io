@@ -1,10 +1,10 @@
 ---
 widget: pages
-widget_id: my-widget-123
+widget_id: past-projects
 headless: true
-weight: 30
+weight: 10
 title: Past student projects
-active: true
+active: false
 design:
   columns: "1"
   background:
