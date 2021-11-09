@@ -2,7 +2,7 @@
 title: To Style or Not to Style? A Comparison Between Data Augmentation and
   Style Supression for Domain Generalization
 date: 2021-08-25
-featured: true
+featured: false
 categories:
   - Internship
 image:
