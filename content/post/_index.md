@@ -1,5 +1,5 @@
 ---
-title: Latest News
+title: Student Projects
 
 # View.
 #   1 = List
